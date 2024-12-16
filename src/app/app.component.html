@@ -1,0 +1,9 @@
+<app-sidebar />
+<app-header />
+<main class="main">
+  <p-button *ngIf="isLoginButtonVisible" label="Login" (click)="showLoginPopup()"></p-button>
+  <app-login-popup *ngIf="isLoginPopupVisible" (close)="hideLoginPopup()"></app-login-popup>
+  <router-outlet></router-outlet>
+</main>
+<footer></footer>
+

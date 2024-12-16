@@ -1,0 +1,17 @@
+.header-nav{
+  transform: translate(40px);
+  display: flex;
+  gap: 2px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    transform: translate(-60px);
+    span {
+      margin-right: 1rem;
+    }
+  }
+}
