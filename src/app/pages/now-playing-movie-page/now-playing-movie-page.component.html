@@ -1,9 +1,0 @@
-<div class="page-wrapper">
-  <ng-container *ngIf="movies$ | async as Movies; else loading">
-    <h2>NOW PLAYING</h2>
-    <app-movie-list [movies]="Movies"></app-movie-list>
-  </ng-container>
-  <ng-template #loading>
-    <p>Loading...</p>
-  </ng-template>
-</div>
